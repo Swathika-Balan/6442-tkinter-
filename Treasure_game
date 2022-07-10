@@ -1,0 +1,60 @@
+name=input("enter your Name ")
+print("welcometo the MY ADVENTURE ",name)
+answer=input("\n\nyou are at the end of the road🛣️🛣️  ,\n Do you want to go left or right? ").lower()
+if answer == "left":
+    ans=input("\nyou are across the river 🌊🌊🌊🌊,you can swim 🏊‍♂️ or walk🚶‍♂️.\n if walk type walk,if swim type swim  ").lower()
+    if ans =="walk":
+        print("\nyou walked miles and miles and lost the path🚶‍🚶‍, Saw a Person.🙋🙋🙋")
+        ans=input(" Do you want to talk to him 🙋🙋 or not 🙇🙇,\n\nif talk type go if not type no ").lower()
+        if ans== "go":
+            print("\n he hand overed box  🎁🎁")  
+            ans=input("\n Do you want to select the box,\n\n if yes type yes /no means no ").lower()
+            if ans=="yes":
+                print("\n For choosing the box, type box(0,1)")
+                def box(i):
+                    switcher={
+                        0:"\n OHH NOO...,you are caught by a SNAKE  🐍🐍🐍🐍🐍🐍",
+                        1:" \n OHH NOO...,you are caught by a HUNTER  😲😲😲😲",
+                        }
+                    return switcher.get(i,"\n Invalid Answer, You lost the game  👎👎👎👎")
+            else:
+
+                print("\n Invalid Answer, You lost the game  👎👎👎👎")
+
+        else:print("\n Invalid Answer, You lost the game  👎👎👎👎")              
+
+
+    elif ans =="swim":
+        print("\n\n you swam across the river and eaten by the aligator🦈🦈🦈🦈 ")
+    else:
+        print("\nInvalid Answer, You lost the game  👎👎👎👎")
+   
+elif answer == "right":
+    ans=input("\nyou are across the Mountain ⛰️⛰️🌋🌋,you want to go trucking or put tent. \nif trucking type trucking /if tent type tent ").lower()
+    if ans=="trucking":
+        print("\n\nyou reached tip of the mountain😊")
+        ans=input("\nYou saw hut far a long , Do you want to  go or continue the sight seeing,\n\nif go type go or sight seeing type no ").lower()
+        if ans== "go":
+            print("Saw 3 boxes🎁🎁🎁")
+            ans=input("do you want to select the box,\n if yes type yes /no means no ").lower()
+            if ans=="yes":
+                print("for choosing the box, type box(0,1,2)")
+                def box(i):
+                    switcher={
+                        0:" OHH NOO...,you are caught by a SNAKE  🐍🐍🐍🐍🐍🐍 ",
+                        1:" you got the treasure ,CONGRAGULATIONS, won the game🪙🪙🪙🪙🪙🪙",
+                        2:" OHH NOO...,you are caught by a HUNTER😲😲😲😲😲",
+                        }
+                    return switcher.get(i,"Invalid Answer, You lost the game  👎👎👎👎")
+            else:
+                 print("Invalid Answer, You lost the game 👎👎👎👎 ")              
+
+        else:
+            print("you lost the path while return,\n Met a Ghost 👻👻👻👻👻, Scared to Death😲😲😨😨😨💀 ")
+    elif ans =="tent":
+         print("you saw the sun rise, Also saw the Tiger 🐯🐯🐯🐯🐯\n 🐯:Haii!!, LOST THE GAME")
+    else:
+        print("Invalid Answer, You lost the game 👎👎👎👎")
+
+else:
+    print("Invalid Answer, You lost the game👎👎👎👎")
